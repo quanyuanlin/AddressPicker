@@ -15,6 +15,8 @@
 		849957371F678925003675BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849957351F678925003675BC /* LaunchScreen.storyboard */; };
 		849957421F678925003675BC /* AddressPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 849957411F678925003675BC /* AddressPickerTests.m */; };
 		8499574D1F678925003675BC /* AddressPickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8499574C1F678925003675BC /* AddressPickerUITests.m */; };
+		84B49F741F6A761500829CA8 /* AddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B49F731F6A761500829CA8 /* AddressPickerView.m */; };
+		84B49F761F6A77CB00829CA8 /* address.json in Resources */ = {isa = PBXBuildFile; fileRef = 84B49F751F6A77CB00829CA8 /* address.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		849957481F678925003675BC /* AddressPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddressPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8499574C1F678925003675BC /* AddressPickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressPickerUITests.m; sourceTree = "<group>"; };
 		8499574E1F678925003675BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B49F721F6A761500829CA8 /* AddressPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressPickerView.h; sourceTree = "<group>"; };
+		84B49F731F6A761500829CA8 /* AddressPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressPickerView.m; sourceTree = "<group>"; };
+		84B49F751F6A77CB00829CA8 /* address.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = address.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +106,16 @@
 		849957261F678925003675BC /* AddressPicker */ = {
 			isa = PBXGroup;
 			children = (
+				84B49F711F6A75F700829CA8 /* AddressPicker */,
 				8499572A1F678925003675BC /* AppDelegate.h */,
 				8499572B1F678925003675BC /* AppDelegate.m */,
 				8499572D1F678925003675BC /* ViewController.h */,
 				8499572E1F678925003675BC /* ViewController.m */,
 				849957301F678925003675BC /* Main.storyboard */,
+				849957271F678925003675BC /* Supporting Files */,
 				849957331F678925003675BC /* Assets.xcassets */,
 				849957351F678925003675BC /* LaunchScreen.storyboard */,
 				849957381F678925003675BC /* Info.plist */,
-				849957271F678925003675BC /* Supporting Files */,
 			);
 			path = AddressPicker;
 			sourceTree = "<group>";
@@ -138,6 +144,16 @@
 				8499574E1F678925003675BC /* Info.plist */,
 			);
 			path = AddressPickerUITests;
+			sourceTree = "<group>";
+		};
+		84B49F711F6A75F700829CA8 /* AddressPicker */ = {
+			isa = PBXGroup;
+			children = (
+				84B49F751F6A77CB00829CA8 /* address.json */,
+				84B49F721F6A761500829CA8 /* AddressPickerView.h */,
+				84B49F731F6A761500829CA8 /* AddressPickerView.m */,
+			);
+			path = AddressPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +264,7 @@
 			files = (
 				849957371F678925003675BC /* LaunchScreen.storyboard in Resources */,
 				849957341F678925003675BC /* Assets.xcassets in Resources */,
+				84B49F761F6A77CB00829CA8 /* address.json in Resources */,
 				849957321F678925003675BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8499572F1F678925003675BC /* ViewController.m in Sources */,
+				84B49F741F6A761500829CA8 /* AddressPickerView.m in Sources */,
 				8499572C1F678925003675BC /* AppDelegate.m in Sources */,
 				849957291F678925003675BC /* main.m in Sources */,
 			);
@@ -509,6 +527,7 @@
 				849957531F678925003675BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		849957541F678925003675BC /* Build configuration list for PBXNativeTarget "AddressPickerTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +536,7 @@
 				849957561F678925003675BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		849957571F678925003675BC /* Build configuration list for PBXNativeTarget "AddressPickerUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +545,7 @@
 				849957591F678925003675BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

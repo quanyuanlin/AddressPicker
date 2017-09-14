@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddressPickerView.h"
 
 @interface ViewController : UIViewController
 

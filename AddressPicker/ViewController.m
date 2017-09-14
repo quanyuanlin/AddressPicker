@@ -9,21 +9,26 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+{
+    AddressPickerView *_pickerView;
+}
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    _pickerView = [[AddressPickerView alloc] initWithFrame:CGRectMake(0, 0, 375, 375)];
+    _pickerView.selectBlock = ^(NSString *province, NSString *city, NSString *area) {
+        NSLog(@"%@ %@ %@",province,city,area);
+    };
+    [_pickerView reloadPicker];
+    [self.view addSubview:_pickerView];
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 
 @end
